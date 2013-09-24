@@ -26,3 +26,23 @@ zip, crimes, income
 I then created a linear model in which I verified that, not shockingly, there is
 a negative correlation between household income in a zipcode and crimes commited
 in that zip code. Richer zip codes have fewer reported crimes.
+
+```
+Call:
+lm(formula = income ~ ., data = merged_incomes_crimes)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-33078 -12502  -3395   8191  70894 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 41746.865   1916.589  21.782   <2e-16 ***
+crimes         -4.034      2.276  -1.772   0.0793 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 18750 on 103 degrees of freedom
+Multiple R-squared:  0.02959,Adjusted R-squared:  0.02017 
+F-statistic: 3.141 on 1 and 103 DF,  p-value: 0.0793
+```
