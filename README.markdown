@@ -47,4 +47,5 @@ Multiple R-squared:  0.02959,Adjusted R-squared:  0.02017
 F-statistic: 3.141 on 1 and 103 DF,  p-value: 0.0793
 ```
 
+![resid](https://raw.github.com/earino/data_science_hw1/master/images/resid.png)
 ![qqplot](https://raw.github.com/earino/data_science_hw1/master/images/qqplot.png)
